@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>exercício_01</title>
+    <style>
+        body{
+            font: 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    <script>
+        var sal = Number(window.prompt('Digite o salario do funcionário: '))
+        var porcento = Number.parseInt(window.prompt('digite a porcentagem de reajuste: '))
+        var reajuste = sal * porcento/100
+        var NovoSal = sal+reajuste
+        document.write(`O salário do funcionario com reajuste será: ${NovoSal}`)
+    </script>
+</body>
+</html>
