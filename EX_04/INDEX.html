@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercício 4</title>
+    <style>
+        body{
+            font: 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 4</h1>
+    <p>resultado: </p>
+    <p>final</p>
+    <script>
+        var distribuidor = 45
+        var imposto = 28
+        var fabricante = Number(window.prompt('Digita o preço da fábrica:'))
+        var porcentagem = (fabricante*distribuidor)/100
+        var fabriimposto = (fabricante*imposto)/100
+        var total = Number(fabricante+porcentagem+fabriimposto)
+        var dom = window.document.getElementsByTagName('p')[1]
+        dom.innerText = total
+    </script>
+</body>
+</html>

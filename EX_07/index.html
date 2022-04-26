@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 7</title>
+  <style>
+    body{
+      font: normal 20pt Arial;
+    }
+  </style>
+</head>
+<body>
+<h1>Exercício 7</h1>
+<p>resultado: </p>
+<script>
+  var preco1 = 1.30, preco2 = 1
+  var macas = Number(window.prompt('Digita a quantidade de maçãs:'))
+  var duzia = macas*1
+  var menosde12 = macas*1.30
+  document.write(macas<12?`o valor total é: R$${menosde12.toFixed(2)}`:`O valor total é: ${duzia.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)
+</script>
+</body>
+</html>
