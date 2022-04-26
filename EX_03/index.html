@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercício 3</title>
+    <style>
+        body{
+            font: 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 3</h1>
+    <p>resultado: </p>
+    <p>final</p>
+    <script>
+        var nota1 = Number(window.prompt('Digita a primeira nota:'))
+        var nota2 = Number(window.prompt('Digita a segunda nota:'))
+        var nota3 = Number(window.prompt('Digita a terceira nota:'))
+        var Mediafinal = (nota1*2+nota2*3+nota3*5)/10
+        var dom = window.document.getElementsByTagName('p')[1]
+        dom.innerText = Mediafinal
+    </script>
+</body>
+</html>
